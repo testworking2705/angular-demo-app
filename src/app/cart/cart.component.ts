@@ -7,10 +7,8 @@ import { CartService } from '../cart.service';
   styleUrls: ['./cart.component.css'],
 })
 export class CartComponent {
-  items: this.CartService.getItems();
-  constructor(private cartService: CartService) {
-    
-  }
+  items = this.cartService.getItems();
+  constructor(private cartService: CartService) {}
 
   ngOnInit(): void {}
 }
